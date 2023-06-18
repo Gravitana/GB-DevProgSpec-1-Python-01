@@ -13,14 +13,14 @@ def input_number(message):
     not_correct = True
 
     while not_correct:
-        n = input(message)
+        number = input(message)
 
-        if not n.isnumeric():
+        if not number.isnumeric():
             print('Введённое значение не является числом!')
         else:
             not_correct = False
 
-    return int(n)
+    return int(number)
 
 
 n = input_number('Введите количество долек по ширине ')
